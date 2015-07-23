@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_items_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_profile_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/menu_profile_item"
+            layout="@layout/residemenu_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/menu_startrun_item"
+            layout="@layout/residemenu_item"
+            android:padding="50dp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <include
+            android:id="@+id/menu_history_item"
+            layout="@layout/residemenu_item"
+            android:padding="50dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/menu_realtime_item"
+            layout="@layout/residemenu_item"
+            android:padding="50dp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <include
+            android:id="@+id/menu_friends_item"
+            layout="@layout/residemenu_item"
+            android:padding="50dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/menu_group_item"
+            layout="@layout/residemenu_item"
+            android:padding="50dp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <include
+            android:id="@+id/menu_settings_item"
+            layout="@layout/residemenu_item"
+            android:padding="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

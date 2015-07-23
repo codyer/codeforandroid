@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+
+  <com.amap.api.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/running_map_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+  </com.amap.api.maps.MapView>
+      <TextView
+          android:id="@+id/debug_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="定位中。。。"
+          android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="init_string">--</string>
+    <string name="realtime_list_type_1">正在跑步的好友</string>
+    <string name="realtime_list_type_2">正在跑步的跑团</string>
+    <string name="realtime_running_txt">跑步进行中</string>
+    <string name="realtime_follow">实时跟踪</string>
+    <string name="realtime_praise_btn_txt">加油</string>
+    <string name="realtime_watch_btn_txt">观看</string>
+    
+    <string name="realtime_top_bar_time_txt">时长:</string>
+    <string name="realtime_top_bar_distance_txt">距离:</string>
+    <string name="realtime_top_bar_speed_txt">配速:</string>
+    <string name="realtime_top_bar_heartbeat_txt">心率:</string>
+    
+    <string name="app_name">Pao123</string>
+    <string name="app_logo_name">123GO</string>
+    <string name="app_login">登录</string>
+    <string name="app_register">注册</string>
+    <string name="app_login_by_wechat">微信登录</string>
+    <string name="app_login_by_guest">立即奔跑</string>
+    <string name="app_login_info">用户隐私协议</string>
+    <string name="real_time">实时直播</string>
+    <string name="common_loading">Loading…</string>
+    <string name="register_back">返回</string>
+    <string name="register_verigy_title">填写验证码</string>
+    <string name="start_num">+86</string>
+    <string name="please_input">请输入你的手机号码</string>
+    <string name="verify_num_sended">已发送验证码到你的手机</string>
+    <string name="please_input_verify_num">请输入验证码</string>
+    <string name="btn_get_verify_num">获取验证码</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="startrun">开始跑</string>
+    <string name="long_press_to_pause">长按暂停</string>
+    <string name="close">【</string>
+    <string name="continue_run">继续</string>
+    <string name="finish_run">结束</string>
+    <string name="first_time_use">向右滑动打开菜单</string>
+    <string name="init_time">00:00:00</string>
+    <string name="init_time_txt">时长</string>
+    <string name="real_time_is_closed">直播:关</string>
+    <string name="real_time_is_opened">直播:开</string>
+    <string name="heartbeat">心率: </string>
+    <string name="heartbeat_is_null">156</string>
+    <string name="distance_is_null">2.32</string>
+    <string name="speed_is_null">07:15</string>
+    <string name="heartbeat_map_text">心率</string>
+    <string name="distance_map_text">距离</string>
+    <string name="speed_map_text">配速</string>
+    <string name="heartbeat_text">心率(平均)</string>
+    <string name="distance_text">距离(公里)</string>
+    <string name="speed_text">配速(分钟/公里)</string>
+    <string name="gps">GPS: </string>
+    <string name="gps_is_great">强</string>
+    <string name="fragment_one">地图</string>
+    <string name="fragment_two">计时</string>
+    <string name="fragment_three">页面三</string>
+    <string name="title_activity_running">Running</string>
+    <string name="title_activity_time_count">TimeCountActivity</string>
+    <string name="title_activity_paused_status">PausedStatusActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_register_verify">RegisterVerifyActivity</string>
+    <string name="title_activity_real_time_runing_person_select_list">RealTimeRuningPersonSelectListActivity</string>
+    <string name="title_activity_real_time_map_view">RealTimeMapViewActivity</string>
+
+</resources>

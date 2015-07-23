@@ -1,0 +1,236 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.api.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/realtime_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/realtime_top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeeeee"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/realtime_top_bar_close_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#cccccc"
+            android:contentDescription="@null"
+            android:src="@drawable/realtime_list_close" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_time_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_time_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_time_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal|start"
+            android:text="@string/init_time" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_distance_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_distance_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_distance_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|start"
+            android:text="@string/distance_is_null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_speed_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_speed_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_speed_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|start"
+            android:text="@string/speed_is_null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_heartbeat_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_heartbeat_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_heartbeat_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|start"
+            android:text="@string/heartbeat_is_null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/realtime_left_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/realtime_right_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/realtime_right_ctrl_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/halfbtn"
+                    android:text="@string/close"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_bg"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/realtime_right_bar_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:maxHeight="10dp"
+                        android:maxWidth="10dp"
+                        android:src="@drawable/title_back_btn_img" />
+
+                    <TextView
+                        android:id="@+id/realtime_right_bar_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/realtime_follow"
+                        android:textColor="@color/pao123_orange_main_color" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/pao123_divider_color"
+                    android:contentDescription="@null" />
+
+                <include
+                    android:id="@+id/running_page"
+                    layout="@layout/realtime_map_right_info_item"
+                    android:background="#00000000" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/realtime_praise_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center"
+                        android:background="@color/pao123_orange_main_color"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/realtime_praise_btn_txt"
+                        android:textColor="@color/pao123_txt_white_color"
+                        android:textSize="20sp" />
+
+                    <ListView
+                        android:id="@+id/realtime_map_running_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/realtime_praise_btn"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" >
+                    </ListView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

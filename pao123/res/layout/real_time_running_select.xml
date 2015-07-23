@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/realtime_running_select_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/title_back_btn_img" />
+
+        <TextView
+            android:id="@+id/realtime_running_select_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/realtime_running_txt"
+            android:textColor="@color/pao123_orange_main_color" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/pao123_divider_color"
+        android:contentDescription="@null" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/realtime_watch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/realtime_watch_btn_txt"
+            android:textColor="@color/pao123_txt_white_color"
+            android:textSize="20sp"
+            android:background="@color/pao123_orange_main_color"  />
+
+        <ListView
+            android:id="@+id/realtime_running_select_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/realtime_watch_btn"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

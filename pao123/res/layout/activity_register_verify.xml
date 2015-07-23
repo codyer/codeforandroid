@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_start"
+    tools:context="com.pao123.www.login.RegisterVerifyActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_registerverify_back"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/register_back" />
+
+        <TextView
+            android:id="@+id/str_login"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/register_verigy_title"
+            android:textColor="#e1e1e1"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:gravity="top"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/str_verify_info"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="42dp"
+        android:gravity="center"
+        android:text="@string/verify_num_sended"
+        android:textColor="#e1e1e1" />
+
+    <EditText
+        android:id="@+id/editTextRegisterVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/str_verify_info"
+        android:layout_below="@+id/str_verify_info"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/btn_get_verify"
+        android:ems="10"
+        android:hint="@string/please_input_verify_num"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_get_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editTextRegisterVerify"
+        android:text="@string/btn_get_verify_num" />
+
+</RelativeLayout>

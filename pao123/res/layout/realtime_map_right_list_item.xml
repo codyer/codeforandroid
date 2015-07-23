@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/real_time_map_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/real_time_map_portrait_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/real_time_default_portrait" />
+
+    <TextView
+        android:id="@+id/real_time_map_user_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/real_time_map_portrait_img"
+        android:layout_toRightOf="@+id/real_time_map_portrait_img"
+        android:text="@string/init_string"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/real_time_map_check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:src="@drawable/uncheck" />
+
+</RelativeLayout>

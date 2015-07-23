@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_start"
+    android:orientation="vertical" >
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/title_bar_left_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/titlebar_menu_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:text="@string/app_logo_name"
+                android:textColor="#ff9900"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/title_bar_right_real_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dp"
+                android:padding="7dp"
+                android:textColor="#ff9900"
+                android:textSize="17sp"
+                android:text="@string/real_time" />
+        </FrameLayout>
+<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1E1E1E" />
+<!--     <com.pao123.contrl.startrun.ui.TitleIndicator
+        android:id="@+id/pagerindicator"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/tab_bg"
+        app:footerColor="@color/tab_indicator_text_selected"
+        app:footerLineHeight="2dp"
+        app:footerTriangleHeight="3.0dp"
+        app:textColor="@color/tab_indicator_text"
+        app:textSizeNormal="@dimen/common_text_size_middle_2"
+        app:textSizeSelected="@dimen/common_text_size_middle_2" /> -->
+
+    <!-- Don't set background for ViewPager. It doesn't work because of page margin -->
+
+   <com.pao123.contrl.startrun.ui.ViewPagerCompat
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

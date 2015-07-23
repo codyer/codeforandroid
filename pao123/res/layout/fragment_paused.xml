@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context="com.pao123.contrl.menu.RunningActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+           <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="3" > 
+                <ImageView
+                    android:id="@+id/img_paused_fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/start_fire" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/str_pause_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/init_time"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="60sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/str_distance_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/distance_is_null"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/str_speed_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/speed_is_null"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/str_heartbeat_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/heartbeat_is_null"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/str_distance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/distance_text"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/str_speed"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/speed_text"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/str_heartbeat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/heartbeat_text"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/finish_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <com.pao123.contrl.startrun.ui.CircleProgressView
+                    android:id="@+id/progressbar_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:bgColor="#949494"
+                    app:progressColor="#F06522"
+                    app:radius="65dip"
+                    app:strokeWidth="6dip" />
+
+                <Button
+                    android:id="@+id/btn_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/finish_circle_btn"
+                    android:text="@string/finish_run"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/continue_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <com.pao123.contrl.startrun.ui.CircleProgressView
+                    android:id="@+id/progressbar_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:bgColor="@color/pao123_gray_color"
+                    app:progressColor="#F06522"
+                    app:radius="65dip"
+                    app:strokeWidth="6dip" />
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/continue_circle_btn"
+                    android:text="@string/continue_run"
+                    android:textColor="@color/pao123_txt_white_color"
+                    android:textSize="20sp" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/realtime_top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeeeee"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/realtime_top_bar_close_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        android:background="#cccccc"
+            android:layout_weight="1"
+            android:src="@drawable/realtime_list_close" android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/realtime_top_bar_time_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_time_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_time_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal|start"
+            android:text="@string/init_time" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_distance_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_distance_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_distance_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|start"
+            android:text="@string/distance_is_null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_speed_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_speed_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_speed_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|start"
+            android:text="@string/speed_is_null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_heartbeat_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|end"
+            android:text="@string/realtime_top_bar_heartbeat_txt" />
+
+        <TextView
+            android:id="@+id/realtime_top_bar_heartbeat_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|start"
+            android:text="@string/heartbeat_is_null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/pao123_divider_color"
+            android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>
